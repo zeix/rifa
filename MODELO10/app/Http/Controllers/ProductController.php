@@ -1523,7 +1523,7 @@ class ProductController extends Controller
         $participante =  Participante::find(floatval($externalRef));
 
         echo $participante->id;
-        if ($participante  && $request->status == '1') {
+        if ($participante  && $request->input('data.status') == 'paid') {
             
             Raffle::where('participant_id', '=', $participante->id)->update(['status' => 'Pago']);
 
