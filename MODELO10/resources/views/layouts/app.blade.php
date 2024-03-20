@@ -334,19 +334,6 @@
         }
     </style>
 
-    @if (@$data['social']->group_whats != null)
-        <a href="{{ @$data['social']->group_whats }}" class="botao-flutuante" target="_blank">
-            <i style="margin-top:8px" class="fa fa-whatsapp"></i>&nbsp; GRUPO
-        </a>
-    @endif
-    
-    
-    @if (@$data['social']->instagram != null)
-        <a href="https://www.instagram.com/{{ @$data['social']->instagram }}" class="botao-flutuante-insta" target="_blank">
-            <i style="margin-top:8px" class="fab fa-instagram"></i>
-        </a>
-    @endif
-
     @yield('content')
 
     {{-- @if (!env('HIDE_FOOTER'))

@@ -82,23 +82,6 @@
     </div>
 </div>
 
-@if (env('REQUIRED_DESCRIPTION'))
-    @if (!env('HIDE_TITLE_DESC'))
-        <div class="" style="">
-            <h5 class="mt-1 title-promo {{ $config->tema }}">
-                📋 Descrição
-            </h5>
-        </div>
-    @endif
-
-    <div class="card mt-3 desc {{ $config->tema }}">
-        <p>
-            {!! $productDescription !!}
-        </p>
-    </div>
-@endif
-
-
 <div class="mt-2 d-flex text-center justify-content-center">
     <div class="text-center">
         <center>
